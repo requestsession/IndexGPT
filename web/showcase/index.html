@@ -1,0 +1,73 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IndexGPT Showcase</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Noto+Sans+SC:wght@500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-a" aria-hidden="true"></div>
+    <div class="ambient ambient-b" aria-hidden="true"></div>
+
+    <div class="page">
+      <header class="topbar reveal reveal-1">
+        <div class="brand" id="nav-mark"></div>
+        <div class="lang-switch" role="group" aria-label="Language switch">
+          <button type="button" data-lang="zh" aria-pressed="true">中文</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </header>
+
+      <main class="hero reveal reveal-2">
+        <span class="badge" id="badge"></span>
+        <p class="kicker" id="hero-kicker"></p>
+        <h1 id="title"></h1>
+        <p class="description" id="description"></p>
+
+        <div class="cta-row">
+          <a id="github-btn" class="btn btn-primary" href="#" target="_blank" rel="noreferrer"></a>
+          <a id="demo-btn" class="btn btn-ghost" href="#" target="_blank" rel="noreferrer"></a>
+        </div>
+
+        <ul id="tag-list" class="tag-list"></ul>
+        <ul id="metric-list" class="metric-list"></ul>
+      </main>
+
+      <section class="panel reveal reveal-3">
+        <h2 id="section-title"></h2>
+        <ul id="highlight-list" class="highlight-list"></ul>
+      </section>
+
+      <section class="panel screenshots reveal reveal-4">
+        <h2 id="screen-title"></h2>
+        <ul id="screen-list" class="screen-list"></ul>
+      </section>
+
+      <section class="panel bilingual reveal reveal-4">
+        <h2 id="bilingual-title"></h2>
+        <div class="bilingual-grid">
+          <article class="copy-card">
+            <h3 id="zh-label"></h3>
+            <p id="zh-copy"></p>
+          </article>
+          <article class="copy-card">
+            <h3 id="en-label"></h3>
+            <p id="en-copy"></p>
+          </article>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>IndexGPT Showcase · <span id="year"></span></span>
+      </footer>
+    </div>
+
+    <script src="./content.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
+

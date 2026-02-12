@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+python-multipart
+openai
+torch
+transformers
+peft
+trl
+datasets
+sentence-transformers
+numpy
+faiss-cpu
+pymupdf
+psutil
