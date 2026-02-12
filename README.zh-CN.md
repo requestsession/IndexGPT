@@ -76,7 +76,25 @@ npm run dev -- --host
 - 后端：`8176`（来自 `config.py` / 设置页）
 - 前端：Vite 默认 `5173`
 
-## 4. 端到端流程
+## 4. 界面演示
+
+### AI 助手
+
+![AI 助手](./web/showcase/figs/1_AI_Assistant.png)
+
+### 文献库
+
+![文献库](./web/showcase/figs/2_Documents.png)
+
+### 模型训练
+
+![模型训练](./web/showcase/figs/3_Training_Lab.png)
+
+### 系统设置
+
+![系统设置](./web/showcase/figs/4_System_Settings.png)
+
+## 5. 端到端流程
 
 ### A. 上传论文
 
@@ -114,7 +132,7 @@ npm run dev -- --host
   - Compare 模式（跨论文对比）
   - Web 模式（互联网片段）
 
-## 5. 等价 CLI 命令
+## 6. 等价 CLI 命令
 
 在项目根目录运行：
 
@@ -130,7 +148,7 @@ python -u scripts/c_train_lora.py
 python scripts/d_infer_lora.py
 ```
 
-## 6. 关键目录
+## 7. 关键目录
 
 - `workspace/papers/`: 上传的 PDF
 - `workspace/rag_index/`: 检索索引及元数据
@@ -139,14 +157,14 @@ python scripts/d_infer_lora.py
 - `workspace/logs/`: 运行日志
 - `workspace/chats/`: 对话持久化
 
-## 7. 运行说明
+## 8. 运行说明
 
 - 重任务互斥（索引 / SFT / 训练不可并行）
 - 重任务运行期间聊天会被禁用
 - 历史对话窗口由设置项 `CHAT_HISTORY_ROUNDS` 控制
 - 如果 `workspace/` 下运行目录被删除，加载 `config.py` 时会自动重建
 
-## 8. 常见问题
+## 9. 常见问题
 
 ### 设置页看不到模型
 
@@ -172,7 +190,7 @@ python scripts/d_infer_lora.py
 2. `workspace/data/sft.jsonl` 是否存在
 3. GPU/显存与依赖版本是否匹配
 
-## 9. 引用
+## 10. 引用
 
 如果本项目对你的工作有帮助，可使用以下格式引用：
 
@@ -185,6 +203,6 @@ python scripts/d_infer_lora.py
 }
 ```
 
-## 10. License
+## 11. License
 
 MIT

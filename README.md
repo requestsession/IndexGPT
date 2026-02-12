@@ -76,7 +76,25 @@ Default ports:
 - Backend: `8176` (from `config.py` / settings)
 - Frontend: Vite default `5173`
 
-## 4. End-to-End Workflow
+## 4. UI Preview
+
+### AI Assistant
+
+![AI Assistant](./web/showcase/figs/1_AI_Assistant.png)
+
+### Documents
+
+![Documents](./web/showcase/figs/2_Documents.png)
+
+### Training Lab
+
+![Training Lab](./web/showcase/figs/3_Training_Lab.png)
+
+### System Settings
+
+![System Settings](./web/showcase/figs/4_System_Settings.png)
+
+## 5. End-to-End Workflow
 
 ### Step A: Upload papers
 
@@ -114,7 +132,7 @@ Generated artifacts:
   - Compare mode (cross-paper comparison)
   - Web mode (web snippets)
 
-## 5. Equivalent CLI Commands
+## 6. Equivalent CLI Commands
 
 Run from project root:
 
@@ -130,7 +148,7 @@ Inference module entry:
 python scripts/d_infer_lora.py
 ```
 
-## 6. Key Paths
+## 7. Key Paths
 
 - `workspace/papers/`: uploaded PDFs
 - `workspace/rag_index/`: retrieval index and metadata
@@ -139,14 +157,14 @@ python scripts/d_infer_lora.py
 - `workspace/logs/`: runtime logs
 - `workspace/chats/`: persisted chat sessions
 
-## 7. Runtime Notes
+## 8. Runtime Notes
 
 - Heavy tasks are mutually exclusive (indexing/SFT/training cannot run together)
 - Chat is blocked while a heavy task is running
 - Sliding-window chat history is controlled by settings (`CHAT_HISTORY_ROUNDS`)
 - If runtime directories under `workspace/` are deleted, they are auto-created again when `config.py` is loaded
 
-## 8. Troubleshooting
+## 9. Troubleshooting
 
 ### No model appears in Settings dropdown
 
@@ -172,7 +190,7 @@ Check:
 2. `workspace/data/sft.jsonl` exists
 3. GPU/VRAM availability and dependency versions
 
-## 9. Citation
+## 10. Citation
 
 If this project helps your work, please cite:
 
@@ -185,7 +203,7 @@ If this project helps your work, please cite:
 }
 ```
 
-## 10. License
+## 11. License
 
 MIT
 
