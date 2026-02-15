@@ -2,7 +2,7 @@
 
 [English](./README.md)
 
-IndexGPT 是一个面向科研场景的本地助手工作流，围绕 **RAG + SFT + LoRA** 构建。
+IndexGPT 是一个面向科研场景的本地 AI 助手工作流，围绕 **RAG + SFT + LoRA** 构建。
 它将论文导入、检索问答、SFT 数据生成、LoRA 训练和网页端聊天整合在同一个项目中。
 
 ## 0. 项目标识

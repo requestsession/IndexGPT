@@ -2,7 +2,7 @@
 
 [中文说明](./README.zh-CN.md)
 
-IndexGPT is a local research assistant workflow built around **RAG + SFT + LoRA**.
+IndexGPT is a local AI research assistant workflow built around **RAG + SFT + LoRA**.
 It supports paper ingestion, retrieval-based QA, SFT data generation, LoRA training, and web chat in one project.
 
 ## 0. Project Identity
@@ -206,4 +206,3 @@ If this project helps your work, please cite:
 ## 11. License
 
 MIT
-
